@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mera portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/729b9b3105.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css"> -->
@@ -26,6 +26,7 @@
 
 
 
+
     <!--  home -->
     <div id="home" class="section">
         <div class="container">
@@ -39,7 +40,8 @@
                     <p>" Hey there , I'm a Versatile full stack developer adept at architecting and implementing
                         end-to-end solutions. Seamlessly integrating front-end elegance with powerful back-end
                         functionality to drive exceptional user experiences."</p>
-                    <a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get
+                    <a id="getstart" href="#work" class="btn btn-default smoothScroll wow fadeInUp"
+                        data-wow-delay="1s">Get
                         Started</a>
                 </div>
                 <div class="col-md-2"></div>
@@ -116,7 +118,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
-                    <h2>ABOUT AYUSH</h2>
+                    <h2>
+                        <ul class="list-unstyled list-inline">
+                            <li id="aboutheading">ABOUT</li>
+                            <li id="aboutname" style="font-size: 40px;">AYUSH</li>
+                        </ul>
+                    </h2>
                     <h4>DESIGNER &AMP; DEVELOPER</h4>
                     <p>Welcome to my creative world! I am a passionate designer and developer with a relentless drive to
                         craft extraordinary digital experiences. With expertise in both realms, I seamlessly blend
@@ -137,8 +144,9 @@
                         journey of innovation and excellence together. Let's create extraordinary digital experiences
                         that transcend expectations and fuel your success. </p>
 
-                    <p id="resume"><i id="play-button" class="fa fa-play"></i><a href="#" style="padding: 10px;"></a>
-                        WATCH RESUME</p>
+                    <li id="resume"><a id="play-button" href="./assets/Profile.pdf" target="_blank" class="fa fa-play"
+                            style="margin-right: 15px;"></a>
+                        WATCH RESUME</li>
                 </div>
                 <div id="progress-block" class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
                     <span class="text-top">WEB DESIGN <small>95%</small></span>
@@ -218,71 +226,75 @@
 
 
     <!-- start contact -->
-		<div id="contact" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-						<address>
-                          <ul id="ul" class="list-unstyled ">
-							<p class="contact-title">CONTACT ME</p>
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <address>
+                        <ul id="ul" class="list-unstyled ">
+                            <p class="contact-title">CONTACT ME</p>
                             <li><a href="tel:919992017268" class="fa fa-phone"></a>+91 999-201-7268</li>
-							<li style=" padding-top: 10px; padding-bottom: 10px;"><a href="mailto:ayushxkumar2002@gmail.com" class="fa fa-envelope-o"></a>Support@Ayush.com</li>
-                            <li><a href="https://goo.gl/maps/jhXjxfqxa8nvTBmQ8" class="fa fa-map-marker"></a>Pinjore, Haryana 134104</li>
-							
-                        </ul>
-                        
-                        </address>
-					</div>
-					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
-						<form role="form" method="post" action="">
-							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-							<input name="number" type="tel" class="form-control" id="phone" placeholder="Your Number">
-							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
-							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
-						</form>
-					</div>
-					<div class="col-md-1 col-sm-1"></div>
-				</div>
-			</div>
-		</div>
-		<!-- end contact -->
-
-		<!-- start footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-                        <ul class="social-icon">
-                            <li><a href="https://www.linkedin.com/in/ayush-kumar302" class="fa fa-linkedin"></a></li>
-                            <li><a href="https://github.com/Ayushkumar302" class="fa fa-github"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                        </ul>
-                        
-                        <ul id="list-2" class="list-unstyled list-inline">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="">Terms</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-
-
+                            <li style=" padding-top: 10px; padding-bottom: 10px;"><a
+                                    href="mailto:ayushxkumar2002@gmail.com"
+                                    class="fa fa-envelope-o"></a>Support@Ayush.com</li>
+                            <li><a href="https://goo.gl/maps/jhXjxfqxa8nvTBmQ8" class="fa fa-map-marker"></a>Pinjore,
+                                Haryana 134104</li>
 
                         </ul>
 
-                        <p>Copyright &copy;  Personal Profile 
+                    </address>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+                    <form role="form" method="post" action="">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                        <input name="number" type="tel" class="form-control" id="phone" placeholder="Your Number">
+                        <textarea name="message" rows="5" class="form-control" id="message"
+                            placeholder="Your Message"></textarea>
+                        <input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+                    </form>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+                    <ul class="social-icon">
+                        <li><a href="https://www.linkedin.com/in/ayush-kumar302" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://github.com/Ayushkumar302" class="fa fa-github"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                    </ul>
+
+                    <ul id="list-2" class="list-unstyled list-inline">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Privacy & Policy</a></li>
+
+
+
+                    </ul>
+
+                    <p>Copyright &copy; Personal Portfolio
 
                         . Designed by <a rel="nofollow noopener" href=""></a>Ayush</p>
-                    
-                          
-						
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- end footer -->
 
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- 
     <script>
         const togglebtn = document.querySelector(".toggle_btn");
         const togglebtnIcon = document.querySelector(".toggle_btn i");
@@ -295,7 +307,7 @@
                 "fa-solid fa-xmark" :
                 "fa-solid fa-bars";
         };
-    </script>
+    </script> -->
 
 
     <!-- jQuery -->
